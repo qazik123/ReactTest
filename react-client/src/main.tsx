@@ -26,6 +26,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
+        path: "",
+        element: <Posts />,
+      },
+      {
         path: "posts/:id",
         element: <CurrentPost />,
       },
